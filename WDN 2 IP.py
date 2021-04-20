@@ -1,7 +1,7 @@
 import socket
 import os
 
-os.system("Clear")
+os.system("clear")
 
 print('''\007
 
@@ -10,7 +10,7 @@ print('''\007
 \033[0;36m██║    ██║██╔══██╗████╗  ██║   ╚════██╗   ██║██╔══██╗
 \033[0;34m██║ █╗ ██║██║  ██║██╔██╗ ██║    █████╔╝   ██║██████╔╝
 \033[0;36m██║███╗██║██║  ██║██║╚██╗██║   ██╔═══╝    ██║██╔═══╝ 
-\033[0;34m╚███╔███╔╝██████╔╝██║ ╚████║   ███████╗   ██║██║\033[0;31mv1.5    
+\033[0;34m╚███╔███╔╝██████╔╝██║ ╚████║   ███████╗   ██║██║\033[0;31mv1.6    
 \033[0;36m ╚══╝╚══╝ ╚═════╝ ╚═╝  ╚═══╝   ╚══════╝   ╚═╝╚═╝    
                                                        
 \033[1;36m =============================================\033[1;m
@@ -32,7 +32,26 @@ def en():
     print("\033[0;35mඔබගේ භාෂාව හෝ වෙනත් දෙයක් තෝරන්න: ")
     print("\033[0;35mSelect Your language Or Other: ")
     ya = input('''\033[0;37m[+]=====> ''')
-
+    if ya == "1":
+        sinhala();
+    elif ya == "2":
+        english();
+    elif ya == "3":
+        print('''https://wa.me/+94702801713''')
+        print('''https://wa.me/+94753704046''')
+    elif ya == "4":
+        print('''https://github.com/Pinindu-Tharushan/WDN-2-IP''')
+    elif ya == "5":
+        print('''exit''')
+    else:
+        print('''\033[0;31mවැරදි ඇතුලත් කිරීමකි...!''')
+        print('''\033[0;31minvalid number...!''')
+        print()
+        print('''\033[0;31mනැවත උත්සහ කරන්න...!''')
+        print('''\033[0;31mTry Again...!''')
+        print()
+        en()
+    
 def English():
     print()
     print("Enter Your Web Domain: ")
@@ -68,23 +87,3 @@ def sinhala():
         print("Exit")
 
 en()
-
-if ya == "1":
-    sinhala();
-elif ya == "2":
-    english();
-elif ya == "3":
-    print('''https://wa.me/+94702801713''')
-    print('''https://wa.me/+94753704046''')
-elif ya == "4":
-    print('''https://github.com/Pinindu-Tharushan/WDN-2-IP''')
-elif ya == "5":
-    print('''exit''')
-else:
-    print('''\033[0;31mවැරදි ඇතුලත් කිරීමකි...!''')
-    print('''\033[0;31minvalid number...!''')
-    print()
-    print('''\033[0;31mනැවත උත්සහ කරන්න...!''')
-    print('''\033[0;31mTry Again...!''')
-    print()
-    en()
